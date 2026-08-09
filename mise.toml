@@ -1,0 +1,106 @@
+#:schema https://mise.jdx.dev/schema/mise.json
+
+# Toolchain. `pdftotext` (poppler) and `magick` (ImageMagick) are not single
+# binaries mise can install, so they stay a system prerequisite — `mise run
+# doctor` checks them and says how to get them.
+[tools]
+zig = "0.16.0"
+node = "24"
+pnpm = "10"
+typst = "0.15.1"
+
+[env]
+# So tasks can call `tree-climate` rather than spelling out the build path.
+_.path = ["{{config_root}}/zig-out/bin"]
+
+[tasks.doctor]
+description = "Check the external binaries mise cannot install"
+run = '''
+#!/usr/bin/env bash
+set -uo pipefail
+missing=0
+check() {
+    if command -v "$1" >/dev/null 2>&1; then
+        printf '  ok       %-10s %s\n' "$1" "$(command -v "$1")"
+    else
+        printf '  MISSING  %-10s install with: %s\n' "$1" "$2"
+        missing=1
+    fi
+}
+check pdftotext "brew install poppler"
+check magick    "brew install imagemagick"
+check curl      "ships with macOS; apt install curl"
+check jq        "brew install jq"
+exit $missing
+'''
+
+[tasks.pdf]
+description = "Verify the CAUE 77 source PDF (no direct download exists)"
+run = "./scripts/fetch-source-pdf.sh"
+
+[tasks.build]
+description = "Build the pipeline binary (ReleaseSafe)"
+run = "zig build --release"
+
+[tasks.test]
+description = "Run every test"
+run = ["zig build test --summary all", "zig build test-golden --summary all"]
+
+[tasks.fmt]
+description = "Check Zig formatting"
+run = "zig build fmt"
+
+[tasks.extract]
+description = "Rebuild data/data.json from the source PDF"
+depends = ["build", "pdf"]
+run = "tree-climate extract"
+
+[tasks.enrich]
+description = "Resolve taxa, descriptions and images from open sources"
+depends = ["build"]
+run = "tree-climate enrich"
+
+[tasks.images]
+description = "Download and recompress the principal image of each species"
+depends = ["build"]
+run = "tree-climate images"
+
+[tasks.credits]
+description = "Render docs/CREDITS.md"
+depends = ["build"]
+run = "tree-climate credits"
+
+[tasks.assets]
+description = "Bundle the site's CSS and JavaScript with Vite"
+run = "pnpm --dir web install --frozen-lockfile && pnpm --dir web build"
+
+[tasks.site]
+description = "Generate the static site into site/"
+# Vite first: the generator reads its manifest for the hashed asset filenames.
+depends = ["build", "assets"]
+run = "tree-climate site"
+
+[tasks.serve]
+description = "Serve the generated site locally"
+depends = ["site"]
+run = "pnpm --dir web exec vite preview --outDir ../site --port 8000"
+
+[tasks.doc]
+description = "Compile the Typst PDF into out/"
+# typst does not create the parent directory of its output, and out/ is
+# gitignored — so a clean checkout has none.
+run = ["mkdir -p out", "typst compile --root . typst/species.typ out/species.pdf"]
+
+[tasks.all]
+description = "Run the whole chain, from the source PDF to the PDF and the site"
+# Listed as steps rather than as `depends`, because dependencies may run in
+# parallel and every stage here reads what the previous one wrote.
+depends = ["build", "pdf", "assets"]
+run = [
+    "tree-climate extract",
+    "tree-climate enrich",
+    "tree-climate images",
+    "tree-climate credits",
+    "tree-climate site",
+    "mise run doc",
+]

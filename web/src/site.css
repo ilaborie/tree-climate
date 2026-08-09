@@ -1,0 +1,562 @@
+/* The site's only stylesheet. It carries the identity of the Typst PDF: forest
+   green, paper, system serif for latin names. Bundled by Vite; no web font and
+   no external request. */
+
+/* Every colour is defined here; the dark block only redefines the tokens. */
+:root {
+  color-scheme: light dark;
+
+  --background: #fbfaf7;
+  --surface: #f4f2ec;
+  --ink: #1c1c1a;
+  --muted: #6f7570;
+  --accent: #2f5d3f;
+  --accent-soft: #e6efe7;
+  --border: #e2ded2;
+  --alert-background: #fdf6e3;
+  --alert-border: #d9b96a;
+  --alert-ink: #6b5720;
+
+  --serif: "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+
+  --measure: 68ch;
+  --radius: 4px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #141714;
+    --surface: #1e221e;
+    --ink: #e8e6df;
+    --muted: #9aa196;
+    --accent: #8fc4a1;
+    --accent-soft: #222c24;
+    --border: #2c322c;
+    --alert-background: #2a2416;
+    --alert-border: #8a743c;
+    --alert-ink: #e0cf9a;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  -webkit-text-size-adjust: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  z-index: 10;
+  padding: 0.5rem 0.75rem;
+  background: var(--background);
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+}
+
+/* ------------------------------------------------------------------ layout */
+
+.container {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--border);
+  background: var(--background);
+}
+
+.site-header .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 1.5rem;
+  padding-block: 1rem;
+}
+
+.header__title {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.header__title a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.site-header nav {
+  margin-left: auto;
+  font-family: var(--sans);
+  font-size: 0.85rem;
+}
+
+.site-header nav a {
+  margin-left: 1.25rem;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.site-header nav a:hover,
+.site-header nav a[aria-current="page"] {
+  color: var(--accent);
+}
+
+main {
+  padding-block: 2.5rem 4rem;
+}
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding-block: 1.75rem 2.5rem;
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.site-footer p {
+  margin: 0 0 0.4rem;
+  max-width: var(--measure);
+}
+
+/* ---------------------------------------------------------------- typography */
+
+h1 {
+  font-size: clamp(1.9rem, 1.3rem + 2.4vw, 2.9rem);
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.15;
+  margin: 0 0 0.35rem;
+}
+
+h2 {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 2.5rem 0 0.6rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--accent);
+}
+
+.prose {
+  max-width: var(--measure);
+}
+
+.prose p {
+  margin: 0 0 1rem;
+}
+
+.label {
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.chip {
+  display: inline-block;
+  padding: 0.15rem 0.45rem;
+  margin-right: 0.25rem;
+  border-radius: var(--radius);
+  background: var(--surface);
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  color: var(--ink);
+}
+
+.credit {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  line-height: 1.5;
+  color: var(--muted);
+  margin: 0.5rem 0 0;
+}
+
+.credit a {
+  color: inherit;
+}
+
+.alert {
+  margin: 1.5rem 0 0;
+  padding: 0.6rem 0.9rem;
+  border-left: 3px solid var(--alert-border);
+  border-radius: var(--radius);
+  background: var(--alert-background);
+  color: var(--alert-ink);
+  font-family: var(--sans);
+  font-size: 0.85rem;
+}
+
+.alert p {
+  margin: 0;
+}
+
+.alert p + p {
+  margin-top: 0.3rem;
+}
+
+/* ---------------------------------------------------------------- home */
+
+.intro {
+  max-width: var(--measure);
+  margin-bottom: 2.5rem;
+}
+
+.intro h1 {
+  font-style: normal;
+}
+
+.intro p {
+  color: var(--muted);
+  font-size: 1.1rem;
+}
+
+/* ---------------------------------------------------------------- search */
+
+.search {
+  max-width: 34rem;
+  margin-bottom: 2.5rem;
+}
+
+.search__field {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.search input {
+  flex: 1;
+  min-width: 0;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--background);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 1rem;
+}
+
+.search input:focus {
+  border-color: var(--accent);
+}
+
+.search__hint {
+  margin: 0.5rem 0 0;
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+button {
+  padding: 0.6rem 0.9rem;
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+button:hover {
+  background: var(--surface);
+}
+
+/* ---------------------------------------------------------------- filters */
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 0.75rem 1.5rem;
+  margin-bottom: 2rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.facet {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.facet legend {
+  padding: 0;
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.facet label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin: 0.4rem 0.75rem 0 0;
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.facet input {
+  accent-color: var(--accent);
+  margin: 0;
+}
+
+.filters > button {
+  margin-left: auto;
+  align-self: center;
+}
+
+/* ---------------------------------------------------------------- cards */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.card a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.card__thumb {
+  aspect-ratio: 4 / 3;
+  width: 100%;
+  border-radius: var(--radius);
+  background: var(--surface);
+  object-fit: cover;
+}
+
+.card__empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.card__name {
+  display: block;
+  margin-top: 0.6rem;
+  font-style: italic;
+  line-height: 1.3;
+}
+
+.card a:hover .card__name {
+  color: var(--accent);
+}
+
+.card__fr {
+  display: block;
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+/* ---------------------------------------------------------------- species sheet */
+
+.sheet__names {
+  font-family: var(--sans);
+  font-size: 1.1rem;
+  color: var(--accent);
+  margin: 0 0 2rem;
+}
+
+.sheet__names--missing {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.sheet__top {
+  display: grid;
+  gap: 2rem;
+  align-items: start;
+}
+
+@media (min-width: 48rem) {
+  .sheet__top {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.sheet__illustration {
+  margin: 0;
+}
+
+.sheet__illustration img {
+  width: 100%;
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.characteristics {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.75rem 1rem;
+  margin: 0;
+}
+
+.characteristics dt {
+  padding-top: 0.15rem;
+}
+
+.characteristics dd {
+  margin: 0;
+}
+
+.characteristics .code {
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  color: var(--muted);
+}
+
+.gallery {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.gallery li {
+  margin-bottom: 0.35rem;
+}
+
+.links {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.25rem;
+  font-family: var(--sans);
+  font-size: 0.85rem;
+}
+
+.neighbours {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  font-family: var(--sans);
+  font-size: 0.85rem;
+}
+
+.neighbours a {
+  text-decoration: none;
+}
+
+.neighbours span {
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* ---------------------------------------------------------------- tables */
+
+.table-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--sans);
+  font-size: 0.85rem;
+}
+
+th,
+td {
+  padding: 0.45rem 0.75rem 0.45rem 0;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+
+th {
+  font-weight: 600;
+  color: var(--muted);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+td em {
+  font-family: var(--serif);
+  font-size: 0.95rem;
+}
+
+.count {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin: 0 0 1.25rem;
+}
+
+[hidden] {
+  display: none !important;
+}

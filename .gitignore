@@ -1,0 +1,26 @@
+# Generated directories are anchored with a leading slash. Without it, `site/`
+# also matches `src/site/`, and git silently stops tracking source files.
+
+# Cached API responses (regenerable: mise run enrich)
+/data/cache/
+
+# Typst output (regenerable: mise run doc)
+/out/
+
+# Static site (regenerable: mise run site)
+/site/
+
+# The CAUE 77 advisory PDF: kept locally so the extraction can be replayed,
+# never redistributed. It remains the property of the CAUE de Seine-et-Marne
+# (see docs/CREDITS.md). `mise run pdf` says how to obtain it.
+/docs/*.pdf
+
+# Zig build artefacts
+/zig-out/
+/.zig-cache/
+
+# Vite dependencies (regenerable: pnpm --dir web install). Left unanchored on
+# purpose: pnpm creates them at any depth.
+node_modules/
+
+.DS_Store

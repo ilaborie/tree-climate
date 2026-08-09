@@ -1,0 +1,208 @@
+latin_name,french_name,height_m,acidity,moisture,exposure,traits,pdf_page
+Abies concolor,Sapin du Colorado,22,acide|neutre|basique,frais|sec,soleil|mi-soleil,persistant,8
+Abies nordmanniana,Sapin de Nordmann,28,acide|neutre|basique,humide|frais,soleil|mi-soleil,persistant,8
+Abies pinsapo,Sapin d'Espagne,20,neutre|basique,sec,soleil,persistant,8
+Acacia dealbata,Mimosa d'hiver,8,acide|neutre,frais|sec,soleil,persistant,8
+Acacia retinoides,Mimosa des quatre saisons,5,acide|neutre|basique,frais|sec,soleil,persistant,8
+Acer buergerianum,Érable trifide,10,acide|neutre,frais|sec,soleil|mi-soleil,,8
+Acer campestre,Érable champêtre,14,acide|neutre|basique,humide|frais|sec,soleil|mi-soleil,,8
+Acer cappadocicum,Érable de Cappadoce,19,acide|neutre|basique,frais|sec,soleil,,8
+Acer griseum,Erable à écorce de papier,9,acide|neutre,humide|frais,soleil|mi-soleil,,8
+Acer monspessulanum,Érable de Montpellier,9,acide|neutre|basique,frais|sec,soleil,,8
+Acer opalus,Érable à feuilles d'Obier,12,acide|neutre|basique,frais|sec,soleil|mi-soleil,,8
+Acer tataricum subsp. Ginnala,Erable du fleuve Amour,6,acide|neutre|basique,frais|sec,soleil|mi-soleil,,8
+Acer x freemanii,Erable hybride de Freeman,15,acide|neutre|basique,frais|sec,soleil,,8
+Acer x zoeschense 'Annae',Erable de Zoeschen Annae,12,acide|neutre|basique,frais|sec,soleil,,8
+Albizia julibrissin,Arbre à soie,9,acide|neutre|basique,frais|sec,soleil,,8
+Alnus cordata,Aulne de Corse,17,acide|neutre,humide|frais|sec,soleil,,8
+Alnus incana,Aulne blanc,15,neutre|basique,humide|frais|sec,soleil|mi-soleil,,8
+Alnus x spaethii,Aulne de Späth,16,acide|neutre|basique,humide|frais|sec,soleil|mi-soleil,,8
+Amelanchier ovalis,"Amélanchier à feuilles ovale, Amélanchier des bois",6,neutre|basique,frais|sec,soleil|mi-soleil,fruits,8
+Arbutus unedo,Arbousier,12,acide|neutre,frais|sec,soleil|mi-soleil,persistant|fruits,8
+Arbutus x andrachnoides,Arbousier hybride Turc,5,acide|neutre,frais|sec,soleil|mi-soleil,persistant|fruits,8
+Broussonetia papyrifera,Mûrier à papier,11,acide|neutre|basique,frais|sec,soleil,,8
+Calocedrus decurens,Calocèdre,21,acide|neutre|basique,humide|frais|sec,soleil|mi-soleil,persistant,8
+Carpinus japonica,Charme du Japon,11,acide|neutre|basique,humide|frais,soleil|mi-soleil,,8
+Carpinus turczaninowii,Charme de Turczaninow,11,acide|neutre|basique,frais,soleil|mi-soleil,,8
+Carya cordiformis,Noyer des marais,21,acide|neutre|basique,humide|frais|sec,soleil|mi-soleil|ombre,,8
+Carya illinoinensis,Pacanier,31,acide|neutre,humide|frais,soleil,,8
+Carya ovata,Noyer blanc d'Amérique,25,acide|neutre,humide|frais,soleil|mi-soleil,,8
+Cedrus atlantica,Cèdre de l'Atlas,30,acide|neutre|basique,frais|sec,soleil,persistant,8
+Cedrus libani,Cèdre du Liban,25,acide|neutre|basique,frais|sec,soleil,persistant,8
+Celtis australis,Micocoulier de Provence,18,neutre|basique,frais|sec,soleil,,9
+Celtis biondii,Micocoulier de Biondi,15,acide|neutre|basique,humide|frais,soleil|mi-soleil,,9
+Celtis julianae,Micocoulier de Julian,15,acide|neutre|basique,frais|sec,soleil|mi-soleil,,9
+Celtis laevigata,Micocoulier du Mississippi,16,acide|neutre,humide|frais|sec,soleil|mi-soleil,,9
+Celtis occidentalis,Micocoulier de Virginie,15,acide|neutre|basique,frais|sec,soleil|mi-soleil,,9
+Celtis sinensis,Micocoulier de Chine,20,acide|neutre|basique,frais|sec,soleil|mi-soleil,,9
+Cercis canadensis,Gainier du Canada,9,acide|neutre|basique,humide|frais|sec,soleil,,9
+Cercis siliquastrum,Arbre de Judée,9,acide|neutre|basique,frais|sec,soleil,,9
+Cinnamomum camphora,Camphrier,7,neutre,frais|sec,soleil,persistant,9
+Citrus trifoliata,"Poncir, Citronnier épineux",6,acide|neutre|basique,frais|sec,soleil,,9
+Cornus mas,Cornouiller mâle,6,neutre|basique,frais|sec,soleil|mi-soleil,,9
+Cornus officinalis,Cornouiller officinal,6,neutre|basique,frais|sec,soleil|mi-soleil,,9
+Corylus colurna,Noisetier de Byzance,18,acide|neutre|basique,frais|sec,soleil,,9
+Cotinus coggygria,Arbre à perruques,5,neutre|basique,frais|sec,soleil,,9
+Cupressus sempervirens,Cyprès de Florence,20,acide|neutre|basique,frais|sec,soleil,persistant,9
+Cydonia oblonga,Cognassier commun,6,acide|neutre|basique,frais,soleil,fruits,9
+Diospyros kaki,Kaki,9,acide|neutre,humide|frais,soleil,fruits,9
+Diospyros lotus,Plaqueminier lotier,14,acide|neutre|basique,humide|frais|sec,soleil|mi-soleil,,9
+Diospyros virginiana,Plaqueminier de Virginie,18,acide|neutre|basique,humide|frais,soleil|mi-soleil,,9
+Elaeagnus angustifolia,Olivier de Bohême,7,acide|neutre|basique,sec,soleil,,9
+Elaeagnus umbellata,Chalef en ombelles,5,acide|neutre|basique,frais|sec,soleil|mi-soleil,semi-persistant,9
+Eriobothrya japonica,Néflier du Japon,6,acide|neutre|basique,frais|sec,soleil|mi-soleil,persistant,9
+Eucalyptus gunnii,Eucalyptus commun,20,acide|neutre,frais,soleil,persistant,9
+Eucalyptus pauciflora subsp. Debeuzevillei,Gommier des neiges sous-espèce debeuzebillei,10,acide|neutre|basique,frais,soleil,persistant,9
+Eucalyptus pauciflora subsp. Niphophila,Gommier des neiges sous-espèce niphophila,9,acide|neutre,frais,soleil,persistant,9
+Eucommia ulmoides,Arbre à Gutta-Percha,20,,,soleil,,9
+Ficus carica,Figuier commun,9,neutre|basique,frais|sec,soleil,fruits,9
+Firmiana simplex,Firmiana à feuilles de platane,13,acide|neutre|basique,frais,soleil|mi-soleil,,9
+Fontanesia phillyreoides,Troène de Syrie,,,,,,9
+Fraxinus americana,Frêne d'Amérique,25,acide|neutre,frais,soleil,,9
+Fraxinus ornus,Frêne à fleurs,10,acide|neutre|basique,frais|sec,soleil,,9
+Ginkgo biloba,Arbre aux quarante écus,25,neutre,frais|sec,soleil,,9
+Gleditsia triacanthos f. inermis,Févier d'Amérique inerme,20,acide|neutre|basique,frais|sec,soleil,,10
+Gymnocladus dioicus,Chicot du Canada,17,neutre|basique,frais|sec,soleil,,10
+Heptacodium miconioides,Arbre aux sept fleurs,6,acide|neutre|basique,frais,soleil|mi-soleil,,10
+Hippophae rhamnoides,Argousier,5,neutre|basique,humide|frais|sec,soleil,,10
+Hovenia dulcis,Raisinier de Chine,12,neutre,frais,soleil|mi-soleil,,10
+Juglans nigra x regia,Noyer hybride nigra x regia,,,,,,10
+Juglans regia,Noyer commun,22,acide|neutre|basique,humide|frais|sec,soleil,fruits,10
+Juniperus chinensis,Genévrier de Chine,20,neutre|basique,frais|sec,soleil,persistant,10
+Juniperus communis,Genévrier commun,6,acide|neutre|basique,frais|sec,soleil,persistant,10
+Juniperus virginiana,Genévrier de Virginie,20,acide|neutre,frais|sec,soleil,persistant,10
+Kalopanax septemlobus,Kalopanax du Japon,12,neutre,humide|frais,soleil|mi-soleil,,10
+Koelreuteria bipinnata,Savonnier bipenné,15,neutre,frais|sec,soleil,,10
+Koelreuteria paniculata,Savonnier de Chine,10,neutre,frais|sec,soleil,,10
+Laburnum anagyroides,Cytise commun,7,neutre|basique,frais,soleil,,10
+Laburnum x watereri 'Vossii',Cytise hybride de Voss,5,neutre|basique,frais|sec,soleil,,10
+Lagerstroemia indica,Lilas des indes,7,acide|neutre|basique,frais|sec,soleil,,10
+Laurus nobilis,Laurier-sauce,9,acide|neutre|basique,frais|sec,soleil|mi-soleil,persistant,10
+Ligustrum japonicum,Troène du Japon,8,neutre|basique,frais,soleil|mi-soleil,persistant,10
+Ligustrum lucidum,Troène brillant,11,acide|neutre|basique,frais,soleil,persistant,10
+Liquidambar formosana,Copalme de Formose,21,acide|neutre,humide|frais,soleil,,10
+Liquidambar orientalis,Copalme d'Orient,14,acide|neutre,humide|frais,soleil|mi-soleil,,10
+Liriodendron tulipifera,Tulipier de Virginie,26,acide|neutre,humide|frais,soleil|mi-soleil,,10
+Lonicera maackii,Chèvrefeuille de Maack,4,acide|neutre|basique,frais|sec,soleil|mi-soleil,,10
+Maackia amurensis,Maackia de l'Amour,8,acide|neutre|basique,frais|sec,soleil|mi-soleil,,10
+Maclura pomifera,Oranger des Osages,15,acide|neutre,frais|sec,soleil,,10
+Magnolia grandiflora,Magnolia à grandes fleurs,17,acide|neutre,frais,soleil|mi-soleil,,10
+Malus domestica,Pommier commun,10,neutre,frais,soleil,fruits,10
+Malus sylvestris,Pommier des bois,9,acide|neutre|basique,humide|frais,soleil|mi-soleil,,10
+Malus toringo,Pommier d'ornement japonais,6,acide|neutre|basique,frais,soleil|mi-soleil,,10
+Malus trilobata,Pommier à trois lobes,15,acide|neutre|basique,frais|sec,soleil|mi-soleil,,10
+Malus x floribunda,Pommier florifère,5,acide|neutre|basique,frais,soleil,,10
+Melia azedarach,Lilas de Perse,14,acide|neutre|basique,frais|sec,soleil,,10
+Morus alba,Murier blanc,12,acide|neutre|basique,frais|sec,soleil,fruits,10
+Morus nigra,Murier noir,8,acide|neutre|basique,frais|sec,soleil|mi-soleil,fruits,10
+Olea europaea,Olivier,9,acide|neutre|basique,sec,soleil,persistant|fruits,11
+Osmanthus fragrans,Osmanthe à parfum,5,acide|neutre|basique,frais,soleil|mi-soleil,persistant,11
+Osmanthus x fortunei,Osmanthe hybride de Fortune,6,acide|neutre,frais|sec,soleil|mi-soleil|ombre,persistant,11
+Ostrya carpinifolia,Charme houblon,16,acide|neutre|basique,frais|sec,soleil|mi-soleil,,11
+Parrotia persica,"Parrotie de Perse, Arbre de fer",10,acide|neutre|basique,humide|frais,soleil|mi-soleil,,11
+Paulownia tomentosa,Paulownia impérial,14,acide|neutre|basique,frais,soleil,,11
+Phellodendron amurense,Phellodendron de l'Amour,13,acide|neutre|basique,frais|sec,soleil,,11
+Photinia serratifolia,Photinia denté,5,acide|neutre|basique,frais,soleil|mi-soleil,persistant,11
+Picea omorika,Epicéa de Serbie,21,neutre|basique,humide|frais,soleil|mi-soleil,persistant,11
+Picea orientalis,Epicéa d'Orient,30,acide|neutre|basique,humide|frais,soleil|mi-soleil,persistant,11
+Picea pungens,Epicéa bleu du Colorado,19,acide|neutre|basique,humide|frais|sec,soleil,persistant,11
+Pinus bungeana,Pin Napoléon,20,acide|neutre|basique,frais,soleil,persistant,11
+Pinus cembra,Pin cembro,15,acide|neutre,frais,soleil,persistant,11
+Pinus halepensis,Pin d'Alep,22,acide|neutre|basique,frais|sec,soleil,persistant,11
+Pinus nigra subsp. Laricio,Pin laricio,30,acide|neutre|basique,frais|sec,soleil,persistant,11
+Pinus nigra subsp. Nigra,Pin noir d'Autriche,25,neutre|basique,frais|sec,soleil,persistant,11
+Pinus nigra subsp. salzmannii,Pin noir de Salzmann,20,,,,persistant,11
+Pinus pinaster,Pin maritime,25,acide|neutre,frais|sec,soleil,persistant,11
+Pinus pinea,"Pin parasol, Pin pignon",24,acide|neutre|basique,frais|sec,soleil,persistant,11
+Pinus ponderosa,"Pin jaune du Nouveau Monde, Pin à bois lourd",18,acide|neutre|basique,humide|frais,soleil,persistant,11
+Pinus uncinata,Pin à crochets,,,frais|sec,,persistant,11
+Platanus orientalis,Platane d'Orient,25,neutre|basique,frais|sec,soleil,,11
+Platanus x hispanica,Platane à feuilles d'érable,31,neutre,frais|sec,soleil,,11
+Podocarpus macrophyllus,"Pin des bouddhistes, Podocarpe à grandes feuilles",15,acide|neutre,humide|frais,soleil|mi-soleil,persistant,11
+Populus alba,Peuplier blanc,26,acide|neutre|basique,humide|frais|sec,soleil,,11
+Prunus armeniaca,Abricotier,7,neutre|basique,frais,soleil,fruits,11
+Prunus cerasifera,Myrobolan,9,neutre|basique,humide|frais|sec,soleil,fruits,11
+Prunus cerasus,Griottier,12,acide|neutre|basique,frais|sec,soleil|mi-soleil,fruits,11
+Prunus domestica,Prunier,8,acide|neutre,frais|sec,soleil,fruits,11
+Prunus dulcis,Amandier,12,neutre|basique,frais|sec,soleil,fruits,11
+Prunus incisa,Cerisier dentelé,4,acide|neutre,frais|sec,soleil,,11
+Prunus laurocerasus,"Laurier-palme, Laurier-cerise",8,acide|neutre,frais,soleil|mi-soleil,persistant,11
+Prunus lusitanica,Laurier du Portugal,8,acide|neutre|basique,frais|sec,soleil,persistant,12
+Prunus mahaleb,Cerisier de Sainte-Lucie,6,neutre|basique,frais|sec,soleil|mi-soleil,,12
+Prunus mume,Abricotier du japon,8,acide|neutre,frais|sec,soleil,,12
+Prunus persica,Pêcher commun,7,acide|neutre|basique,frais,soleil,fruits,12
+Ptelea trifoliata,Ptéléa trifolié,6,acide|neutre,frais|sec,soleil|mi-soleil|ombre,,12
+Pterocarya fraxinifolia,"Ptérocaryer à feuilles de frêne, Noyer du Caucase",20,neutre|basique,humide|frais,soleil|mi-soleil,,12
+Punica granatum,Grenadier,5,acide|neutre|basique,frais|sec,soleil,,12
+Pyrus communis,Poirier commun,16,acide|neutre,frais,soleil,fruits,12
+Pyrus salicifolia 'Pendula',Poirier à feuilles de saule Pendula,5,neutre|basique,frais|sec,soleil,,12
+Quercus × kewensis,Chêne hybride de Kew,13,neutre|basique,frais|sec,soleil|mi-soleil,,12
+Quercus acutissima,"Chêne du Japon, Chêne à dents de scie",15,acide|neutre,humide|frais,soleil|mi-soleil,,12
+Quercus agrifolia,Chêne vert de Californie,12,acide|neutre|basique,frais|sec,soleil,persistant,12
+Quercus alba,Chêne blanc,20,acide|neutre,humide|frais,soleil,,12
+Quercus buckleyi,Chêne de Buckley,,,,,,12
+Quercus canariensis,"Chêne zéen, chêne des Canaries",25,,frais,soleil,,12
+Quercus castaneifolia,Chêne à feuilles de Châtaigner,27,neutre|basique,frais|sec,soleil|mi-soleil,,12
+Quercus cerris,Chêne chevelu,25,acide|neutre|basique,frais|sec,soleil,,12
+Quercus coccifera,Chêne kermès,4,acide|neutre|basique,sec,soleil,persistant,12
+Quercus coccinea,Chêne écarlate,20,acide|neutre,frais|sec,soleil,,12
+Quercus dentata,"Chêne Daimyo, Chêne denté",15,acide|neutre,humide|frais,soleil,,12
+Quercus falcata,Chêne falciforme,16,acide|neutre,frais|sec,soleil,,12
+Quercus frainetto,Chêne de Hongrie,22,acide|neutre,humide|frais|sec,soleil,,12
+Quercus glauca,Chêne glauque,12,neutre,humide|frais,soleil|mi-soleil,,12
+Quercus ilex,"Chêne vert, Yeuse",16,acide|neutre|basique,sec,soleil,persistant,12
+Quercus imbricaria,"Chêne à lattes, Chêne à feuilles de laurier, Chêne imbriqué",22,acide|neutre,frais|sec,soleil|mi-soleil,,12
+Quercus ithaburensis,Chêne de Grèce,,,,,,12
+Quercus libani,Chêne du Liban,12,neutre|basique,frais|sec,soleil|mi-soleil,semi-persistant,12
+Quercus myrsinifolia,"Chêne à feuilles de myrsine, Chêne à feuilles de bambou",16,acide|neutre|basique,frais,soleil|mi-soleil,persistant,12
+Quercus nigra,Chêne noir,20,acide|neutre,humide|frais,soleil,semi-persistant,12
+Quercus phellos,Chêne à feuilles de saule,17,acide|neutre,humide|frais|sec,soleil,,12
+Quercus phillyreoides,Chêne à feuilles de filaire,12,acide|neutre|basique,frais|sec,soleil,persistant,13
+Quercus pubescens,Chêne pubescent,17,acide|neutre|basique,frais|sec,soleil|mi-soleil,,13
+Quercus pyrenaica,"Chêne des Pyrénées, chêne tauzin",13,acide|neutre,frais,soleil|mi-soleil,,13
+Quercus rotundifolia,Chêne vert à feuilles rondes,8,acide|neutre|basique,sec,soleil|mi-soleil,persistant,13
+Quercus rubra,Chêne rouge d'Amérique,25,acide|neutre,humide|frais,soleil,,13
+Quercus rysophylla,"Chêne du Mexique, Chêne à feuilles ridées",15,acide|neutre,frais,soleil|mi-soleil,semi-persistant,13
+Quercus suber,Chêne-liège,18,acide|neutre,frais|sec,soleil,persistant,13
+Quercus trojana,Chêne de Macédoine,15,neutre|basique,frais|sec,soleil,semi-persistant,13
+Quercus variabilis,Chêne liège de Chine,20,acide|neutre|basique,frais|sec,soleil,,13
+Quercus velutina,"Chêne des teinturiers, Chêne velouté",26,acide|neutre,frais,soleil,,13
+Quercus x hispanica,Chêne hybride d'Espagne,16,neutre|basique,frais|sec,soleil,semi-persistant,13
+Quercus x kewensis,Chêne hybride de Kew,13,neutre|basique,frais|sec,soleil|mi-soleil,persistant,13
+Quercus x turneri,Chêne hybride de Turner,16,acide|neutre|basique,frais|sec,soleil|mi-soleil,semi-persistant,13
+Rhamnus alaternus,Nerprun alaterne,4,acide|neutre|basique,frais|sec,soleil,persistant,13
+Rhamnus cathartica,Nerprun purgatif,4,neutre|basique,frais,soleil|mi-soleil,,13
+Rhus typhina,Sumac de Virginie,7,acide|neutre|basique,frais|sec,soleil|mi-soleil,,13
+Robinia hispida var. rosea Pursh,Robinier rose,,,,,,13
+Robinia pseudoacacia,Robinier faux acacia,23,acide|neutre|basique,frais|sec,soleil,,13
+Robinia x margaretta 'Pink Cascade' CASQUE ROUGE,Robinier Casque Rouge,7,neutre|basique,frais|sec,soleil,,13
+Salix alba 'Liempde',Saule blanc Liempde,25,neutre|basique,humide|frais,soleil,,13
+Sassafras albidum,"Sassafras blanc, Laurier des Iroquois",12,acide|neutre,humide|frais,soleil|mi-soleil,,13
+Schinus molle,Faux-poivrier,8,acide|neutre|basique,sec,soleil,persistant,13
+Sequoia sempervirens,Séquoia toujours vert,50,acide|neutre,frais,soleil|mi-soleil,persistant,13
+Sorbus aria,Alisier blanc,14,neutre|basique,frais|sec,soleil|mi-soleil,,13
+Sorbus domestica,Cormier,16,neutre|basique,frais|sec,soleil,,13
+Sorbus intermedia,Sorbier de Suède,12,acide|neutre|basique,frais,soleil|mi-soleil,,13
+Sorbus latifolia,Alisier de Fontainebleau,15,acide|neutre|basique,humide|frais,soleil,,13
+Sorbus torminalis,Alisier torminal,18,acide|neutre|basique,frais,soleil,,13
+Styphnolobium japonicum,Sophora du Japon,20,acide|neutre,frais|sec,soleil|mi-soleil,,13
+Tamarix sp.,Tamarix,,,,,,13
+Tetradium daniellii,Arbre à miel,12,neutre|basique,frais|sec,soleil,,13
+Tilia cordata,Tilleul à petites feuilles,26,acide|neutre|basique,frais,soleil|mi-soleil,,13
+Tilia henryana,Tilleul de Henry,14,acide|neutre|basique,frais,soleil|mi-soleil,,14
+Tilia mongolica,Tilleul de Mongolie,13,acide|neutre,frais,soleil,,14
+Tilia platyphyllos,Tilleul à grandes feuilles,35,acide|neutre|basique,frais,soleil|mi-soleil,,14
+Tilia tomentosa,Tilleul argenté,28,acide|neutre|basique,frais|sec,soleil,,14
+Tilia x euchlora,Tilleul de Crimée,20,acide|neutre|basique,frais|sec,soleil|mi-soleil,,14
+Toona sinensis,Cédrèle de Chine,18,acide|neutre,humide|frais,soleil,,14
+Trachycarpus fortunei,Palmier de Chine,8,acide|neutre,frais,soleil|mi-soleil|ombre,persistant,14
+Ulmus 'Nanguen' LUTECE®,Orme hybride Lutèce,14,neutre|basique,humide|frais,soleil|mi-soleil,,14
+Ulmus 'Sapporo Autumn Gold' (RESISTA® series),Orme résistant Sapporo Autumn Gold,15,neutre|basique,humide|frais,soleil|mi-soleil,,14
+Ulmus parvifolia,Orme de Chine,15,acide|neutre|basique,frais|sec,soleil|mi-soleil,,14
+Viburnum tinus,Viorne tin,4,acide|neutre|basique,frais|sec,soleil|mi-soleil,,14
+x Chitalpa tashkentensis,Chitalpa de Tashkent,7,neutre|basique,frais|sec,soleil,,14
+x Hesperotropsis leylandii,Cyprès de Leyland,30,acide|neutre|basique,frais,soleil|mi-soleil,persistant,14
+Zelkova carpinifolia,"Zelkova à feuille de charme, Faux-orme de Sibérie",24,neutre,frais,soleil|mi-soleil,,14
+Zelkova carpinifolia 'Verschaffeltii',Faux-orme de Sibérie Verschaffeltii,,,,,,14
+Zelkova serrata,Faux-orme du Japon,20,acide|neutre,frais|sec,soleil|mi-soleil,,14
+Ziziphus jujuba,Jujubier commun,9,acide|neutre|basique,frais|sec,soleil,fruits,14
