@@ -1,0 +1,97 @@
+name: Build, test and deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One publication at a time, without cancelling the one in flight.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+env:
+  # mise ignores [env] and [tasks] from a config it has not been told to trust,
+  # and jdx/mise-action does not run `mise trust` itself.
+  MISE_TRUSTED_CONFIG_PATHS: ${{ github.workspace }}
+  IMAGEMAGICK_VERSION: 7.1.2-29
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+
+      # Installs zig 0.16.0, node 24, pnpm 10 and typst 0.15.1 from mise.toml.
+      - uses: jdx/mise-action@v4
+
+      # The runners ship no ImageMagick at all, and Ubuntu 24.04's apt package
+      # is version 6, which has no `magick` command. Install the official
+      # version 7 AppImage, pinned.
+      - name: Install ImageMagick 7
+        run: |
+          set -euo pipefail
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends libfuse2t64
+          curl -sSfLo /tmp/magick \
+            "https://github.com/ImageMagick/ImageMagick/releases/download/${IMAGEMAGICK_VERSION}/ImageMagick-${IMAGEMAGICK_VERSION}-gcc-x86_64.AppImage"
+          sudo install -m 0755 /tmp/magick /usr/local/bin/magick
+          magick -version
+
+      - name: Check formatting
+        run: zig build fmt
+
+      - name: Run unit tests
+        run: zig build test --summary all
+
+      # 6 pass and 1 skip: the test that replays the extraction needs the CAUE 77
+      # PDF, which is deliberately not redistributed in this repository.
+      - name: Run golden tests
+        run: zig build test-golden --summary all
+
+      - name: Build the pipeline binary
+        run: mise run build
+
+      # Must precede the site generation, which reads Vite's manifest for the
+      # content-hashed asset filenames.
+      - name: Bundle the assets
+        run: mise run assets
+
+      - uses: actions/configure-pages@v6
+        id: pages
+
+      # Not `mise run site`: that task passes no options, whereas publishing
+      # under a sub-path needs two. base_path has no trailing slash and
+      # base_url must not have one either.
+      - name: Generate the site
+        run: |
+          ./zig-out/bin/tree-climate site \
+            --base "${{ steps.pages.outputs.base_path }}/" \
+            --site-url "${{ steps.pages.outputs.base_url }}"
+
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: site
+
+      - name: Compile the Typst document
+        run: mise run doc
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: species-pdf
+          path: out/species.pdf
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-24.04
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5
